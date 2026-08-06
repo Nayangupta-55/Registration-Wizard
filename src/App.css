@@ -1,0 +1,220 @@
+.wizard-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+}
+
+.wizard-card {
+  width: 100%;
+  max-width: 440px;
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 10px 40px rgba(20, 24, 40, 0.08);
+  padding: 32px;
+}
+
+.wizard-title {
+  font-size: 22px;
+  font-weight: 700;
+  margin: 0 0 20px;
+  color: #1a1d29;
+}
+
+/* Progress bar */
+.progress-wrap {
+  margin-bottom: 28px;
+}
+
+.progress-label {
+  font-size: 13px;
+  font-weight: 600;
+  color: #5c6178;
+  margin-bottom: 8px;
+}
+
+.progress-track {
+  height: 8px;
+  background: #eceef4;
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #4f6df5, #7b5cf0);
+  border-radius: 999px;
+  transition: width 0.35s ease;
+}
+
+/* Step / fields */
+.step {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.field label {
+  font-size: 13px;
+  font-weight: 600;
+  color: #33374a;
+}
+
+.field input {
+  height: 44px;
+  padding: 0 14px;
+  border-radius: 10px;
+  border: 1px solid #d8dbe6;
+  font-size: 14px;
+  outline: none;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+  width: 100%;
+}
+
+.field input:focus {
+  border-color: #4f6df5;
+  box-shadow: 0 0 0 3px rgba(79, 109, 245, 0.15);
+}
+
+.field input.input-error {
+  border-color: #e35d5d;
+}
+
+.error-text {
+  font-size: 12px;
+  color: #e35d5d;
+  font-weight: 500;
+}
+
+/* Password input with eye toggle */
+.password-input-wrap {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.password-input-wrap input {
+  padding-right: 44px;
+}
+
+.eye-toggle {
+  position: absolute;
+  right: 8px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 6px;
+  line-height: 1;
+}
+
+/* Review step */
+.review-title {
+  font-size: 16px;
+  font-weight: 700;
+  margin: 0 0 4px;
+  color: #1a1d29;
+}
+
+.review-table {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #eceef4;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.review-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 12px 14px;
+  font-size: 14px;
+  border-bottom: 1px solid #eceef4;
+}
+
+.review-row:last-child {
+  border-bottom: none;
+}
+
+.review-label {
+  color: #5c6178;
+  font-weight: 600;
+}
+
+.review-value {
+  color: #1a1d29;
+  text-align: right;
+  word-break: break-word;
+}
+
+/* Actions */
+.wizard-actions {
+  margin-top: 28px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btn {
+  height: 44px;
+  padding: 0 22px;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+  transition: opacity 0.15s ease, transform 0.05s ease;
+}
+
+.btn:active {
+  transform: scale(0.98);
+}
+
+.btn-primary {
+  background: linear-gradient(90deg, #4f6df5, #7b5cf0);
+  color: #ffffff;
+  margin-left: auto;
+}
+
+.btn-primary:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+.btn-secondary {
+  background: #eceef4;
+  color: #33374a;
+}
+
+/* Success screen */
+.success-card {
+  text-align: center;
+}
+
+.success-icon {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: #e8f7ee;
+  color: #2fa864;
+  font-size: 28px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 18px;
+}
+
+.success-text {
+  font-size: 14px;
+  color: #5c6178;
+  margin-bottom: 24px;
+}
